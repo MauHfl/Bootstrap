@@ -1,0 +1,69 @@
+.Contenedor {
+    background-color: azure;
+    padding: 5px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "contenido contenido ads"
+        "footer footer footer";
+}
+.Contenedor .header
+{
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    grid-area: header;
+}
+.Contenedor .nav
+{
+    background-color: azure;
+    grid-area: nav;
+}
+.Contenedor .contenido
+{
+    padding: 5px;
+    grid-area: contenido;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente para las descripciones */
+    border-radius: 5px; /* Bordes redondeados para las descripciones */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos adicionales para los botones */
+.accordion-button {
+    background-color: #343a40; /* Color de fondo de los botones */
+    color: #ffffff; /* Color de texto */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #343a40; /* Color de texto para el estado activo */
+    background-color: #ffffff; /* Fondo blanco para el estado activo */
+}
+
+.accordion-item {
+    border: none; /* Sin borde alrededor de los items */
+    margin-bottom: 10px; /* Espacio entre los items */
+}
+.Contenedor .ads
+{   
+    font-size: 25px;
+    padding: 5px;
+    grid-area: ads;
+}
+.Contenedor .footer
+{
+    background-color: #343a40;
+    color: #ffffff;
+    grid-area: footer;
+    text-align: center;
+}
+.carousel-inner img {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+}

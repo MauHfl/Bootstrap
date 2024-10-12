@@ -1,0 +1,63 @@
+.Contenedor
+{
+    padding: 5px;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido ads"
+                         "footer footer";
+}
+
+.Contenedor .header
+{
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    grid-area: header;
+}
+.Contenedor .nav
+{
+    background-color: azure;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+}
+.Contenedor .contenido
+{
+    background-color: azure;
+    grid-area: contenido;
+}
+.accordion-button {
+    background-color: #343a40; 
+    color: #ffffff; 
+}
+
+.accordion-button:not(.collapsed) {
+    color: #343a40; 
+    background-color: #ffffff; 
+}
+
+.accordion-item {
+    border: none; 
+    margin-bottom: 10px; 
+}
+.Contenedor .ads
+{
+    background-color: azure;
+    grid-area: ads;
+}
+.Contenedor .footer
+{
+    background-color: #343a40;
+    color: #ffffff;
+    grid-area: footer;
+    text-align: center;
+}
+.carousel-inner img {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover; 
+}

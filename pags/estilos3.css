@@ -1,0 +1,86 @@
+.Contenedor {
+    background-color: azure;
+    padding: 5px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "Materia1 Materia2 Materia3"
+        "Materia4 Materia5 Materia6"
+        "footer footer footer";
+}
+.Contenedor .header
+{
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    grid-area: header;
+}
+.Contenedor .nav
+{
+    background-color: azure;
+    grid-area: nav;
+}
+.Contenedor .Materia1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    grid-area: Materia1;
+}
+.Contenedor .Materia2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    grid-area: Materia2;
+}
+.Contenedor .Materia3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    grid-area: Materia3;
+}
+.Contenedor .Materia4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    grid-area: Materia4;
+}
+.Contenedor .Materia5
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    grid-area: Materia5;
+}
+.Contenedor .Materia6
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    grid-area: Materia6;
+}
+.Contenedor .footer
+{
+    background-color: #343a40;
+    color: #ffffff;
+    grid-area: footer;
+    text-align: center;
+}
+.card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
